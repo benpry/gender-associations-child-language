@@ -1,0 +1,354 @@
+---
+title: "MakeAllPlots"
+author: "Ben Prystawski"
+date: "28/11/2021"
+output: html_document
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+
+```{r}
+library(tidyverse)
+library(here)
+```
+
+# Aggregate Plots
+
+```{r}
+df_results <- read.csv("../../data/results/aggregate/bootstrapped_aggregate_corrs_nonames.csv") |>
+  filter(speech_metric=="pfgw")
+
+df_results_agg = df_results |>
+  group_by(speech_type, assoc, embeddings) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_results, aes(x=embeddings, y=corr, color=speech_type)) +
+  facet_grid(. ~ assoc) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type,
+                                                      ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr),
+              position=position_dodge(width=0.9), color="black",
+              width=0) +
+  geom_point(data=df_results_agg, 
+             aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type),
+             stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Embeddings", y="Pearson r", color="Speech Type") +
+  theme_minimal()
+
+ggsave("../../figures/agg_plots.pdf")
+```
+
+# Yearly Plots
+
+```{r}
+df_yearly = read.csv("../../data/results/yearly/bootstrapped_yearly_corrs_nonames.csv") |>
+  filter(speech_metric=="pfgw")
+
+df_yearly_agg = df_yearly |>
+  group_by(speech_type, assoc, embeddings, age) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_yearly_agg, aes(x=age, y=mean_corr, color=embeddings, group=embeddings)) +
+  facet_grid(assoc ~ speech_type) +
+  geom_errorbar(aes(ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr), width=0,
+                 position=position_dodge(0.2), color="black", size=0.5,) +
+  geom_point(position=position_dodge(0.2), size=1) +
+  geom_line(stat="identity", position=position_dodge(0.2)) +
+  labs(x="Age", y="Pearson r") +
+  theme_minimal()
+
+ggsave("../../figures/yearly_plots.pdf")
+```
+
+# Decade Plots
+
+```{r}
+df_decade_hist = read.csv("../../data/results/decade/bootstrapped_results_by_decade_nonames_hist.csv") |>
+  filter(speech_metric=="pfgw")
+
+df_decade_hist <- df_decade_hist |>
+  mutate(decade = factor(decade, levels=c("70s", "80s", '90s')))
+
+# Hist analysis
+df_decade_agg = df_decade_hist |>
+  group_by(speech_type, assoc, embeddings, decade) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_decade_agg, aes(x=decade, y=mean_corr, group=1)) +
+  facet_grid(assoc ~ speech_type) +
+  geom_errorbar(aes(ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr), width=0,
+              position=position_dodge(0.1), color="black", size=0.5) +
+  geom_point(position=position_dodge(0.1), size=1, color="lightblue") +
+  geom_line(position=position_dodge(0.1), size=0.6, color="lightblue") +
+    labs(x="Decade", y="Mean Correlation") +
+  theme_minimal()
+
+ggsave("../../figures/decade_plots_hist.pdf", bg="white")
+
+
+# Standard analysis
+df_decade = read.csv("../../data/results/decade/bootstrapped_results_by_decade_nonames.csv") |>
+  filter(speech_metric=="pfgw")
+
+df_decade_agg = df_decade |>
+  group_by(speech_type, assoc, embeddings, decade) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_decade_agg, aes(x=decade, y=mean_corr, color=embeddings, group=embeddings)) +
+  facet_grid(assoc ~ speech_type) +
+  geom_errorbar(aes(ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr), width=0,
+                position=position_dodge(0.1), color="black", size=0.5) +
+  geom_point(position=position_dodge(0.1), size=1) +
+  geom_line(position=position_dodge(0.1), size=0.6) +
+  labs(x="Decade", y="Mean Correlation", color="Embeddings") +
+  theme_minimal()
+
+ggsave("../../figures/decade_plots.pdf", bg="white")
+```
+
+# Class Plots
+
+```{r}
+df_results <- read.csv("../../data/results/class/bootstrapped_class_corrs_nonames.csv") |>
+  filter(speech_metric=="pfgw")
+
+df_results <- df_results |>
+  rowwise() |>
+  mutate(social_class=strsplit(class, ",")[[1]][2],
+         race=strsplit(class, ",")[[1]][1]) |>
+  mutate(social_class = ifelse(social_class == "UC", "MC", social_class))
+
+df_results_weat = df_results |>
+  filter(assoc == "WEAT")
+
+df_results_agg = df_results_weat |>
+  group_by(speech_type, assoc, embeddings, social_class, race) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+# WEAT version
+ggplot(df_results_weat, aes(x=social_class, y=corr, color=race)) +
+  facet_grid(speech_type ~ embeddings) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=social_class, y=mean_corr, 
+                                                        color=race, group=race, 
+                                                        ymin=mean_corr-ci_corr,
+                                                        ymax=mean_corr+ci_corr),
+                position=position_dodge(width=0.9), color="black", width=0) +
+  geom_point(data=df_results_agg,
+           aes(x=social_class, y=mean_corr, color=race, group=race),
+           stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Social Class", y="Pearson r", color="Race") + 
+  theme_minimal()
+
+ggsave("../../figures/class_plot_weat.pdf")
+
+# PROJ version
+
+df_results_proj = df_results |>
+  filter(assoc == "PROJ")
+
+df_results_agg = df_results_proj |>
+  group_by(speech_type, assoc, embeddings, social_class, race) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_results_proj, aes(x=social_class, y=corr, color=race)) +
+  facet_grid(speech_type ~ embeddings) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=social_class, y=mean_corr, 
+                                                        color=race, group=race, 
+                                                        ymin=mean_corr-ci_corr,
+                                                        ymax=mean_corr+ci_corr),
+                position=position_dodge(width=0.9), color="black", width=0) +
+  geom_point(data=df_results_agg,
+           aes(x=social_class, y=mean_corr, color=race, group=race),
+           stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Social Class", y="Pearson r", color="Race") + 
+  theme_minimal()
+ggsave("../../figures/class_plot_proj.pdf")
+```
+
+# Similarity Correlation Analysis
+
+```{r}
+df_simcorrs = read.csv("../../data/results/similarity_correlations.csv")
+
+ggplot(df_simcorrs, aes(x=embeddings, y=r)) +
+  geom_violin()
+
+df_simcorrs_agg = df_simcorrs |>
+  group_by(embeddings) |>
+  summarize(mean_r = mean(r),
+            ci_r = sd(r))
+
+ggplot(df_simcorrs, aes(x=embeddings, y=r, color=embeddings)) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_simcorrs_agg, inherit.aes=F,
+                aes(x=embeddings, y=mean_r, ymin=mean_r-ci_r,
+                    ymax=mean_r+ci_r), width=0) +
+  geom_point(data=df_simcorrs_agg, 
+           aes(x=embeddings, y=mean_r), stat="identity") +
+  labs(x="Embeddings", y="Pearson r", color="Embeddings") +
+  theme_minimal() +
+  theme(legend.position = "none")
+
+ggsave("../../figures/sim_corrs.pdf")
+```
+
+# Parent-Child Plots
+
+```{r}
+formatted_names <- c("father_daughter" = "father-daughter",
+                     "father_son" = "father-son",
+                     "mother_daughter" = "mother-daughter",
+                     "mother_son" = "mother-son")
+df_results = read.csv("../../data/results/parent_child/parent_child_corrs_nonames.csv") |>
+  mutate(speech_type = formatted_names[speech_type])
+
+df_results_agg <- df_results |>
+  group_by(speech_type, embeddings, assoc) |>
+  summarize(mean_assoc = mean(corr),
+            ci_assoc = sd(corr),
+            .groups="keep")
+
+
+ggplot(df_results, aes(x=embeddings, y=corr, color=speech_type)) +
+  facet_grid(. ~ assoc) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=embeddings, y=mean_assoc, color=speech_type, group=speech_type,
+                                                        ymin=mean_assoc-ci_assoc, ymax=mean_assoc+ci_assoc),
+                position=position_dodge(width=0.9), width=0, color="black") +
+  geom_point(data=df_results_agg,
+           aes(x=embeddings, y=mean_assoc, color=speech_type, group=speech_type),
+           stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Embeddings", y="Mean Association", color="Speech Type") +
+  theme_minimal() +
+  theme(axis.text.x = element_text(angle=15))
+
+
+ggsave("../../figures/parent_child_corrs.pdf", bg="white")
+```
+
+
+# Odds Ratio and Log-Odds Ratio Plots
+
+```{r} 
+df_results <- read.csv("../../data/results/aggregate/bootstrapped_aggregate_corrs_nonames.csv") |>
+  filter(speech_metric=="OR")
+
+df_results_agg = df_results |>
+  group_by(speech_type, assoc, embeddings) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_results, aes(x=embeddings, y=corr, color=speech_type)) +
+  facet_grid(. ~ assoc) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type,
+                                                        ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr),
+                position=position_dodge(width=0.9), color="black",
+                width=0) +
+  geom_point(data=df_results_agg, 
+           aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type),
+           stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Embeddings", y="Pearson r", color="Speech Type", title="Odds Ratio") +
+  theme_minimal()
+
+ggsave("../../figures/agg_plots_or.pdf")
+```
+
+```{r} 
+df_results <- read.csv("../../data/results/aggregate/bootstrapped_aggregate_corrs_nonames.csv") |>
+  filter(speech_metric=="LOR")
+
+df_results_agg = df_results |>
+  group_by(speech_type, assoc, embeddings) |>
+  summarize(mean_corr=mean(corr),
+            ci_corr = sd(corr), .groups="keep")
+
+ggplot(df_results, aes(x=embeddings, y=corr, color=speech_type)) +
+  facet_grid(. ~ assoc) +
+  geom_violin(draw_quantiles = c(0.025, 0.975)) +
+  geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type,
+                                                        ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr),
+                position=position_dodge(width=0.9), color="black",
+                width=0) +
+  geom_point(data=df_results_agg, 
+             aes(x=embeddings, y=mean_corr, color=speech_type, group=speech_type),
+             stat="identity", position=position_dodge(width=0.9)) +
+  labs(x="Embeddings", y="Pearson r", color="Speech Type", title="Log-Odds Ratio") +
+  theme_minimal()
+
+ggsave("../../figures/agg_plots_lor.pdf")
+```
+
+# Adult Speech Plots
+
+```{r}
+df_all_results <- read.csv("../../data/results/santa_barbara/bootstrapped_corrs_santabarbara_nonames.csv") |>
+  filter(speech_type == 'CS')
+
+for (speech_met in c("pfgw", "OR", "LOR")) {
+  
+  df_results <- df_all_results |>
+    filter(speech_metric == speech_met)
+
+  met_text <- if(speech_met == "pfgw") "Gender Probability" else speech_met 
+  
+  df_results_agg = df_results |>
+    group_by(speech_type, assoc, embeddings) |>
+    summarize(mean_corr=mean(corr),
+              ci_corr = sd(corr), .groups="keep")
+  
+  ggplot(df_results, aes(x=assoc, y=corr, color=embeddings)) +
+    geom_violin(draw_quantiles = c(0.025, 0.975)) +
+    geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=assoc, y=mean_corr, color=embeddings, group=embeddings,
+                                                          ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr),
+                  position=position_dodge(width=0.9), color="black", width=0) +
+    geom_point(data=df_results_agg, 
+               aes(x=assoc, y=mean_corr, color=embeddings, group=embeddings),
+               stat="identity", position=position_dodge(width=0.9)) +
+    labs(x="Association Metric", y="Pearson r", color="Embeddings", title=sprintf("Santa Barbara: %s", met_text)) +
+    theme_minimal()
+  
+  ggsave(sprintf("../../figures/santa_barbara_plots_%s.pdf", speech_met))
+}
+```
+
+```{r}
+df_all_results <- read.csv("../../data/results/switchboard/bootstrapped_corrs_switchboard_nonames.csv") |>
+  filter(speech_type == 'CS')
+
+for (speech_met in c("pfgw", "OR", "LOR")) {
+  
+  df_results <- df_all_results |>
+    filter(speech_metric == speech_met)
+  
+  met_text <- if(speech_met == "pfgw") "Gender Probability" else speech_met 
+
+  df_results_agg = df_results |>
+    group_by(speech_type, assoc, embeddings) |>
+    summarize(mean_corr=mean(corr),
+              ci_corr = sd(corr), .groups="keep")
+  
+  ggplot(df_results, aes(x=assoc, y=corr, color=embeddings)) +
+    geom_violin(draw_quantiles = c(0.025, 0.975)) +
+    geom_errorbar(data=df_results_agg, inherit.aes=F, aes(x=assoc, y=mean_corr, color=embeddings, group=embeddings,
+                                                          ymin=mean_corr-ci_corr, ymax=mean_corr+ci_corr),
+                  position=position_dodge(width=0.9), color="black", width=0) +
+    geom_point(data=df_results_agg, 
+               aes(x=assoc, y=mean_corr, color=embeddings, group=embeddings),
+               stat="identity", position=position_dodge(width=0.9)) +
+    labs(x="Association Metric", y="Pearson r", color="Embeddings", title=sprintf("Switchboard: %s", met_text)) +
+    theme_minimal()
+  
+  ggsave(sprintf("../../figures/switchboard_plots_%s.pdf", speech_met))
+}
+```

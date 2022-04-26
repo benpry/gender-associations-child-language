@@ -1,0 +1,16 @@
+total words in CS: 2866
+total words in CDS: 4465
+median words in bootstrapped CS: 2869.0
+mean words in bootstrapped CS: 2868.6927
+median words in bootstrapped CDS: 4557.0
+mean words in bootstrapped CDS: 4556.6236
+median words in bootstrapped SB: 944.0
+mean words in bootstrapped SB: 943.4873
+median words in bootstrapped SW: 2879.0
+mean words in bootstrapped SW: 2879.1094
+median number of shared words: 668.0
+mean number of shared words: 668.3698
+median number of shared words (no SB): 1195.0
+mean number of shared words (no SB): 1194.8971
+median number of shared words (CS/CDS): 2609.0
+mean number of shared words (CS/CDS): 2609.1743

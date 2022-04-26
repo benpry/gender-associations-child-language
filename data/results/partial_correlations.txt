@@ -1,0 +1,36 @@
+Word2Vec-CDS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1315  0.242875  [0.19, 0.29]  4.143161e-19  7.032e+15    1.0
+Word2Vec-CDS partial
+            n         r         CI95%         p-val
+pearson  1315  0.210734  [0.16, 0.26]  1.261709e-14
+Word2Vec-CS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1315  0.260551  [0.21, 0.31]  7.559897e-22  3.564e+18    1.0
+Word2Vec-CS partial
+            n         r         CI95%         p-val
+pearson  1315  0.237952  [0.19, 0.29]  2.475242e-18
+GloVe-CDS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1317  0.290416  [0.24, 0.34]  5.195759e-27  4.574e+23    1.0
+GloVe-CDS partial
+            n         r         CI95%         p-val
+pearson  1317  0.259834  [0.21, 0.31]  1.058100e-21
+GloVe-CS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1317  0.327514  [0.28, 0.37]  2.656822e-34  7.748e+30    1.0
+GloVe-CS partial
+            n        r         CI95%         p-val
+pearson  1317  0.31072  [0.26, 0.36]  8.784036e-31
+fastText-CDS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1317  0.260051  [0.21, 0.31]  8.476754e-22  3.181e+18    1.0
+fastText-CDS partial
+            n        r         CI95%         p-val
+pearson  1317  0.22457  [0.17, 0.28]  1.794951e-16
+fastText-CS full
+            n         r         CI95%         p-val       BF10  power
+pearson  1317  0.285162  [0.23, 0.33]  4.624461e-26  5.249e+22    1.0
+fastText-CS partial
+            n         r         CI95%         p-val
+pearson  1317  0.262334  [0.21, 0.31]  4.184906e-22

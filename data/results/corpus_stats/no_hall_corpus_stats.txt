@@ -1,0 +1,26 @@
+../../data/ChildesCorpus//Bloom70/Peter/010908.cha led to a parsing error.
+../../data/ChildesCorpus//Bloom70/Peter/011011.cha led to a parsing error.
+../../data/ChildesCorpus//Bloom70/Peter/020415.cha led to a parsing error.
+../../data/ChildesCorpus//Braunwald/020203.cha led to a parsing error.
+../../data/ChildesCorpus//Braunwald/030128.cha led to a parsing error.
+../../data/ChildesCorpus//Cornell/mom0502.cha led to a parsing error.
+../../data/ChildesCorpus//Feldman/020213.cha led to a parsing error.
+../../data/ChildesCorpus//NewmanRatner/Interviews/07/5550VS.cha led to a parsing error.
+../../data/ChildesCorpus//Rollins/cc09.cha led to a parsing error.
+../../data/ChildesCorpus//Rollins/ma12.cha led to a parsing error.
+../../data/ChildesCorpus//Rollins/st09.cha led to a parsing error.
+../../data/ChildesCorpus//Soderstrom/Joe/000717.cha led to a parsing error.
+total tokens: 6417747
+total boys: 1536
+total girls: 2186
+total children: 3722
+boys by age
+defaultdict(<class 'int'>, {'1': 650922, '2': 1042708, '3': 663195, '4': 505025, '5': 347869})
+girls by age
+defaultdict(<class 'int'>, {'1': 676132, '2': 1049242, '3': 545773, '4': 480691, '5': 246796, '01': 32524, '02': 37311, '03': 9965})
+percentage girls tokens by age
+{'1': 0.5094984831061886, '2': 0.5015617008054686, '3': 0.4514370934549136, '4': 0.487656688133296, '5': 0.4150168582311049}
+total tokens by age
+{'1': 1327054, '2': 2091950, '3': 1208968, '4': 985716, '5': 594665}
+all ages
+['', '19', '6', '03', '2', '0', '7', '9', '12', '1', '8', '3', '11', '5', '10', '02', '01', '4']

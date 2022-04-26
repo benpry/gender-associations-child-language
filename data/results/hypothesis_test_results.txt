@@ -1,0 +1,774 @@
+AGGREGATE ANALYSIS
+
+pfgw-CDS-WEAT-Word2Vec: .18 (.0) [.16, .20]
+pfgw-CDS-PROJ-Word2Vec: .2 (.0) [.18, .22]
+pfgw-CDS-WEAT-GloVe: .24 (.0) [.22, .26]
+pfgw-CDS-PROJ-GloVe: .24 (.0) [.22, .26]
+pfgw-CDS-WEAT-fastText: .23 (.0) [.21, .26]
+pfgw-CDS-PROJ-fastText: .09 (.0) [.08, .11]
+pfgw-CS-WEAT-Word2Vec: .22 (.0) [.20, .24]
+pfgw-CS-PROJ-Word2Vec: .22 (.0) [.20, .24]
+pfgw-CS-WEAT-GloVe: .28 (.0) [.27, .30]
+pfgw-CS-PROJ-GloVe: .28 (.0) [.26, .30]
+pfgw-CS-WEAT-fastText: .25 (.0) [.24, .27]
+pfgw-CS-PROJ-fastText: .09 (.0) [.07, .10]
+OR-CDS-WEAT-Word2Vec: .16 (.0) [.12, .19]
+OR-CDS-PROJ-Word2Vec: .2 (.0) [.15, .25]
+OR-CDS-WEAT-GloVe: .17 (.0) [.12, .21]
+OR-CDS-PROJ-GloVe: .2 (.0) [.15, .25]
+OR-CDS-WEAT-fastText: .17 (.0) [.12, .21]
+OR-CDS-PROJ-fastText: .09 (.0) [.07, .12]
+OR-CS-WEAT-Word2Vec: .13 (.0) [.09, .16]
+OR-CS-PROJ-Word2Vec: .15 (.0) [.10, .20]
+OR-CS-WEAT-GloVe: .15 (.0) [.10, .19]
+OR-CS-PROJ-GloVe: .17 (.0) [.12, .21]
+OR-CS-WEAT-fastText: .13 (.0) [.08, .17]
+OR-CS-PROJ-fastText: .07 (.04) [-0.01, .10]
+LOR-CDS-WEAT-Word2Vec: .17 (.0) [.15, .19]
+LOR-CDS-PROJ-Word2Vec: .19 (.0) [.17, .22]
+LOR-CDS-WEAT-GloVe: .23 (.0) [.21, .25]
+LOR-CDS-PROJ-GloVe: .23 (.0) [.21, .26]
+LOR-CDS-WEAT-fastText: .22 (.0) [.20, .24]
+LOR-CDS-PROJ-fastText: .09 (.0) [.07, .10]
+LOR-CS-WEAT-Word2Vec: .19 (.0) [.17, .21]
+LOR-CS-PROJ-Word2Vec: .19 (.0) [.17, .21]
+LOR-CS-WEAT-GloVe: .25 (.0) [.23, .27]
+LOR-CS-PROJ-GloVe: .25 (.0) [.23, .27]
+LOR-CS-WEAT-fastText: .22 (.0) [.20, .24]
+LOR-CS-PROJ-fastText: .08 (.0) [.06, .09]
+
+YEARLY ANALYSIS
+
+1-CDS-Word2Vec-WEAT: .0 (1) [-0.04, .06]
+1-CDS-Word2Vec-PROJ: .02 (1) [-0.02, .07]
+1-CDS-GloVe-WEAT: .06 (.62) [.01, .10]
+1-CDS-GloVe-PROJ: .06 (.43) [.02, .10]
+1-CDS-fastText-WEAT: .05 (1) [.00, .09]
+1-CDS-fastText-PROJ: .02 (1) [-0.02, .07]
+1-CS-Word2Vec-WEAT: -0.05 (1) [-0.11, .03]
+1-CS-Word2Vec-PROJ: -0.04 (1) [-0.09, .04]
+1-CS-GloVe-WEAT: -0.01 (1) [-0.07, .07]
+1-CS-GloVe-PROJ: -0.04 (1) [-0.09, .05]
+1-CS-fastText-WEAT: -0.02 (1) [-0.08, .08]
+1-CS-fastText-PROJ: -0.04 (1) [-0.09, .04]
+2-CDS-Word2Vec-WEAT: .14 (.0) [.10, .20]
+2-CDS-Word2Vec-PROJ: .19 (.0) [.14, .27]
+2-CDS-GloVe-WEAT: .18 (.0) [.13, .22]
+2-CDS-GloVe-PROJ: .18 (.0) [.13, .22]
+2-CDS-fastText-WEAT: .14 (.0) [.09, .19]
+2-CDS-fastText-PROJ: .07 (.01) [.04, .11]
+2-CS-Word2Vec-WEAT: .17 (.0) [.09, .22]
+2-CS-Word2Vec-PROJ: .21 (.0) [.14, .25]
+2-CS-GloVe-WEAT: .23 (.0) [.10, .30]
+2-CS-GloVe-PROJ: .22 (.0) [.10, .28]
+2-CS-fastText-WEAT: .2 (.0) [.09, .26]
+2-CS-fastText-PROJ: .08 (.27) [.02, .11]
+3-CDS-Word2Vec-WEAT: .14 (.0) [.10, .18]
+3-CDS-Word2Vec-PROJ: .2 (.0) [.15, .27]
+3-CDS-GloVe-WEAT: .19 (.0) [.13, .24]
+3-CDS-GloVe-PROJ: .22 (.0) [.17, .26]
+3-CDS-fastText-WEAT: .2 (.0) [.11, .26]
+3-CDS-fastText-PROJ: .07 (.0) [.05, .10]
+3-CS-Word2Vec-WEAT: .21 (.0) [.13, .27]
+3-CS-Word2Vec-PROJ: .25 (.0) [.16, .29]
+3-CS-GloVe-WEAT: .27 (.0) [.15, .34]
+3-CS-GloVe-PROJ: .3 (.0) [.19, .36]
+3-CS-fastText-WEAT: .25 (.0) [.13, .32]
+3-CS-fastText-PROJ: .07 (.02) [.05, .11]
+4-CDS-Word2Vec-WEAT: .07 (.05) [.03, .11]
+4-CDS-Word2Vec-PROJ: .07 (.32) [.03, .13]
+4-CDS-GloVe-WEAT: .07 (1) [.01, .12]
+4-CDS-GloVe-PROJ: .09 (.14) [.03, .14]
+4-CDS-fastText-WEAT: .09 (.77) [.01, .14]
+4-CDS-fastText-PROJ: .01 (1) [-0.02, .04]
+4-CS-Word2Vec-WEAT: .17 (.0) [.09, .22]
+4-CS-Word2Vec-PROJ: .17 (.0) [.09, .22]
+4-CS-GloVe-WEAT: .22 (.0) [.12, .28]
+4-CS-GloVe-PROJ: .22 (.0) [.12, .28]
+4-CS-fastText-WEAT: .17 (.0) [.07, .22]
+4-CS-fastText-PROJ: .05 (.38) [.02, .09]
+5-CDS-Word2Vec-WEAT: .17 (.0) [.11, .22]
+5-CDS-Word2Vec-PROJ: .17 (.0) [.09, .22]
+5-CDS-GloVe-WEAT: .17 (.0) [.10, .22]
+5-CDS-GloVe-PROJ: .16 (.0) [.09, .20]
+5-CDS-fastText-WEAT: .15 (.0) [.06, .21]
+5-CDS-fastText-PROJ: .08 (.02) [.05, .11]
+5-CS-Word2Vec-WEAT: .22 (.0) [.14, .28]
+5-CS-Word2Vec-PROJ: .22 (.0) [.14, .27]
+5-CS-GloVe-WEAT: .26 (.0) [.15, .33]
+5-CS-GloVe-PROJ: .25 (.0) [.15, .31]
+5-CS-fastText-WEAT: .23 (.0) [.13, .29]
+5-CS-fastText-PROJ: .11 (.05) [.06, .14]
+
+CLASS ANALYSIS
+
+CLASS - AGAINST 0
+pfgw-WEAT-CDS-Word2Vec Black,WC: .18 (.0) [.12, .24]
+pfgw-WEAT-CDS-Word2Vec Black,UC: .05 (1) [-0.02, .12]
+pfgw-WEAT-CDS-Word2Vec White,WC: .17 (.0) [.10, .24]
+pfgw-WEAT-CDS-Word2Vec White,UC: .11 (.03) [.04, .18]
+pfgw-WEAT-CDS-GloVe Black,WC: .27 (.0) [.21, .33]
+pfgw-WEAT-CDS-GloVe Black,UC: .08 (1) [.00, .16]
+pfgw-WEAT-CDS-GloVe White,WC: .2 (.0) [.12, .27]
+pfgw-WEAT-CDS-GloVe White,UC: .14 (.0) [.07, .21]
+pfgw-WEAT-CDS-fastText Black,WC: .26 (.0) [.20, .32]
+pfgw-WEAT-CDS-fastText Black,UC: .06 (1) [-0.02, .15]
+pfgw-WEAT-CDS-fastText White,WC: .15 (.0) [.08, .23]
+pfgw-WEAT-CDS-fastText White,UC: .15 (.0) [.07, .22]
+pfgw-WEAT-CS-Word2Vec Black,WC: .12 (.0) [.06, .17]
+pfgw-WEAT-CS-Word2Vec Black,UC: .04 (1) [-0.01, .10]
+pfgw-WEAT-CS-Word2Vec White,WC: .15 (.0) [.09, .21]
+pfgw-WEAT-CS-Word2Vec White,UC: .09 (.11) [.03, .14]
+pfgw-WEAT-CS-GloVe Black,WC: .19 (.0) [.13, .24]
+pfgw-WEAT-CS-GloVe Black,UC: .05 (1) [-0.02, .12]
+pfgw-WEAT-CS-GloVe White,WC: .17 (.0) [.10, .23]
+pfgw-WEAT-CS-GloVe White,UC: .06 (.9) [.00, .13]
+pfgw-WEAT-CS-fastText Black,WC: .17 (.0) [.11, .22]
+pfgw-WEAT-CS-fastText Black,UC: .1 (.12) [.03, .16]
+pfgw-WEAT-CS-fastText White,WC: .14 (.0) [.07, .20]
+pfgw-WEAT-CS-fastText White,UC: .05 (1) [-0.01, .11]
+pfgw-PROJ-CDS-Word2Vec Black,WC: .22 (.0) [.17, .27]
+pfgw-PROJ-CDS-Word2Vec Black,UC: .07 (.84) [.01, .14]
+pfgw-PROJ-CDS-Word2Vec White,WC: .19 (.0) [.12, .26]
+pfgw-PROJ-CDS-Word2Vec White,UC: .18 (.0) [.11, .25]
+pfgw-PROJ-CDS-GloVe Black,WC: .26 (.0) [.21, .31]
+pfgw-PROJ-CDS-GloVe Black,UC: .1 (.08) [.04, .17]
+pfgw-PROJ-CDS-GloVe White,WC: .19 (.0) [.13, .26]
+pfgw-PROJ-CDS-GloVe White,UC: .15 (.0) [.08, .21]
+pfgw-PROJ-CDS-fastText Black,WC: .12 (.0) [.08, .15]
+pfgw-PROJ-CDS-fastText Black,UC: .13 (.0) [.10, .17]
+pfgw-PROJ-CDS-fastText White,WC: .06 (.03) [.02, .10]
+pfgw-PROJ-CDS-fastText White,UC: .05 (.16) [.01, .09]
+pfgw-PROJ-CS-Word2Vec Black,WC: .14 (.0) [.09, .19]
+pfgw-PROJ-CS-Word2Vec Black,UC: .04 (1) [-0.02, .10]
+pfgw-PROJ-CS-Word2Vec White,WC: .14 (.0) [.08, .20]
+pfgw-PROJ-CS-Word2Vec White,UC: .09 (.01) [.04, .15]
+pfgw-PROJ-CS-GloVe Black,WC: .2 (.0) [.15, .24]
+pfgw-PROJ-CS-GloVe Black,UC: .03 (1) [-0.03, .09]
+pfgw-PROJ-CS-GloVe White,WC: .15 (.0) [.09, .21]
+pfgw-PROJ-CS-GloVe White,UC: .05 (1) [-0.01, .10]
+pfgw-PROJ-CS-fastText Black,WC: .05 (.32) [.01, .08]
+pfgw-PROJ-CS-fastText Black,UC: .15 (.0) [.11, .18]
+pfgw-PROJ-CS-fastText White,WC: .07 (.0) [.03, .10]
+pfgw-PROJ-CS-fastText White,UC: .01 (1) [-0.02, .05]
+OR-WEAT-CDS-Word2Vec Black,WC: .16 (.03) [.05, .27]
+OR-WEAT-CDS-Word2Vec Black,UC: .12 (.33) [.01, .17]
+OR-WEAT-CDS-Word2Vec White,WC: .15 (.0) [.07, .24]
+OR-WEAT-CDS-Word2Vec White,UC: .12 (.06) [.02, .21]
+OR-WEAT-CDS-GloVe Black,WC: .14 (.52) [.02, .27]
+OR-WEAT-CDS-GloVe Black,UC: .17 (.06) [.05, .24]
+OR-WEAT-CDS-GloVe White,WC: .12 (.76) [.00, .23]
+OR-WEAT-CDS-GloVe White,UC: .13 (.17) [.02, .22]
+OR-WEAT-CDS-fastText Black,WC: .14 (.42) [.02, .26]
+OR-WEAT-CDS-fastText Black,UC: .12 (.79) [-0.01, .20]
+OR-WEAT-CDS-fastText White,WC: .13 (.26) [.03, .23]
+OR-WEAT-CDS-fastText White,UC: .13 (.06) [.03, .23]
+OR-WEAT-CS-Word2Vec Black,WC: .06 (1) [-0.03, .14]
+OR-WEAT-CS-Word2Vec Black,UC: .02 (1) [-0.05, .11]
+OR-WEAT-CS-Word2Vec White,WC: .18 (.0) [.10, .26]
+OR-WEAT-CS-Word2Vec White,UC: .03 (1) [-0.03, .14]
+OR-WEAT-CS-GloVe Black,WC: .01 (1) [-0.09, .10]
+OR-WEAT-CS-GloVe Black,UC: .06 (1) [-0.03, .15]
+OR-WEAT-CS-GloVe White,WC: .16 (.0) [.08, .25]
+OR-WEAT-CS-GloVe White,UC: .01 (1) [-0.07, .13]
+OR-WEAT-CS-fastText Black,WC: .03 (1) [-0.06, .13]
+OR-WEAT-CS-fastText Black,UC: .09 (1) [-0.0, .17]
+OR-WEAT-CS-fastText White,WC: .13 (.39) [.02, .23]
+OR-WEAT-CS-fastText White,UC: .01 (1) [-0.06, .12]
+OR-PROJ-CDS-Word2Vec Black,WC: .23 (.0) [.11, .34]
+OR-PROJ-CDS-Word2Vec Black,UC: .14 (.29) [.01, .21]
+OR-PROJ-CDS-Word2Vec White,WC: .15 (.03) [.06, .26]
+OR-PROJ-CDS-Word2Vec White,UC: .15 (.0) [.04, .25]
+OR-PROJ-CDS-GloVe Black,WC: .18 (.0) [.06, .29]
+OR-PROJ-CDS-GloVe Black,UC: .16 (.12) [.04, .23]
+OR-PROJ-CDS-GloVe White,WC: .13 (.09) [.04, .22]
+OR-PROJ-CDS-GloVe White,UC: .12 (.12) [.02, .22]
+OR-PROJ-CDS-fastText Black,WC: .11 (.0) [.07, .14]
+OR-PROJ-CDS-fastText Black,UC: .08 (.0) [.03, .10]
+OR-PROJ-CDS-fastText White,WC: .08 (.04) [.03, .12]
+OR-PROJ-CDS-fastText White,UC: .07 (.03) [.03, .11]
+OR-PROJ-CS-Word2Vec Black,WC: .06 (1) [-0.0, .13]
+OR-PROJ-CS-Word2Vec Black,UC: .02 (1) [-0.04, .13]
+OR-PROJ-CS-Word2Vec White,WC: .16 (.0) [.08, .25]
+OR-PROJ-CS-Word2Vec White,UC: .04 (1) [-0.02, .12]
+OR-PROJ-CS-GloVe Black,WC: .04 (1) [-0.02, .11]
+OR-PROJ-CS-GloVe Black,UC: .04 (1) [-0.04, .12]
+OR-PROJ-CS-GloVe White,WC: .15 (.0) [.07, .23]
+OR-PROJ-CS-GloVe White,UC: .02 (1) [-0.03, .10]
+OR-PROJ-CS-fastText Black,WC: .03 (1) [-0.04, .09]
+OR-PROJ-CS-fastText Black,UC: .09 (1) [-0.03, .14]
+OR-PROJ-CS-fastText White,WC: .09 (.0) [.05, .12]
+OR-PROJ-CS-fastText White,UC: -0.02 (1) [-0.11, .10]
+LOR-WEAT-CDS-Word2Vec Black,WC: .18 (.0) [.11, .25]
+LOR-WEAT-CDS-Word2Vec Black,UC: .04 (1) [-0.04, .11]
+LOR-WEAT-CDS-Word2Vec White,WC: .15 (.0) [.07, .22]
+LOR-WEAT-CDS-Word2Vec White,UC: .1 (.1) [.03, .17]
+LOR-WEAT-CDS-GloVe Black,WC: .23 (.0) [.16, .31]
+LOR-WEAT-CDS-GloVe Black,UC: .1 (.49) [.01, .18]
+LOR-WEAT-CDS-GloVe White,WC: .16 (.01) [.07, .24]
+LOR-WEAT-CDS-GloVe White,UC: .11 (.06) [.04, .18]
+LOR-WEAT-CDS-fastText Black,WC: .24 (.0) [.17, .31]
+LOR-WEAT-CDS-fastText Black,UC: .07 (1) [-0.02, .15]
+LOR-WEAT-CDS-fastText White,WC: .15 (.0) [.07, .23]
+LOR-WEAT-CDS-fastText White,UC: .12 (.04) [.04, .19]
+LOR-WEAT-CS-Word2Vec Black,WC: .11 (.01) [.05, .17]
+LOR-WEAT-CS-Word2Vec Black,UC: .01 (1) [-0.05, .07]
+LOR-WEAT-CS-Word2Vec White,WC: .14 (.0) [.08, .21]
+LOR-WEAT-CS-Word2Vec White,UC: .06 (1) [.00, .12]
+LOR-WEAT-CS-GloVe Black,WC: .12 (.0) [.06, .18]
+LOR-WEAT-CS-GloVe Black,UC: .02 (1) [-0.05, .08]
+LOR-WEAT-CS-GloVe White,WC: .15 (.0) [.09, .21]
+LOR-WEAT-CS-GloVe White,UC: .04 (1) [-0.02, .10]
+LOR-WEAT-CS-fastText Black,WC: .13 (.0) [.07, .19]
+LOR-WEAT-CS-fastText Black,UC: .07 (1) [.00, .13]
+LOR-WEAT-CS-fastText White,WC: .13 (.0) [.06, .19]
+LOR-WEAT-CS-fastText White,UC: .03 (1) [-0.03, .09]
+LOR-PROJ-CDS-Word2Vec Black,WC: .22 (.0) [.16, .28]
+LOR-PROJ-CDS-Word2Vec Black,UC: .07 (1) [-0.01, .15]
+LOR-PROJ-CDS-Word2Vec White,WC: .17 (.0) [.10, .24]
+LOR-PROJ-CDS-Word2Vec White,UC: .16 (.0) [.09, .23]
+LOR-PROJ-CDS-GloVe Black,WC: .23 (.0) [.17, .29]
+LOR-PROJ-CDS-GloVe Black,UC: .12 (.12) [.03, .19]
+LOR-PROJ-CDS-GloVe White,WC: .16 (.0) [.08, .23]
+LOR-PROJ-CDS-GloVe White,UC: .11 (.02) [.04, .17]
+LOR-PROJ-CDS-fastText Black,WC: .11 (.0) [.08, .15]
+LOR-PROJ-CDS-fastText Black,UC: .11 (.0) [.07, .15]
+LOR-PROJ-CDS-fastText White,WC: .06 (.1) [.02, .10]
+LOR-PROJ-CDS-fastText White,UC: .04 (1) [-0.0, .08]
+LOR-PROJ-CS-Word2Vec Black,WC: .12 (.0) [.08, .17]
+LOR-PROJ-CS-Word2Vec Black,UC: .01 (1) [-0.05, .06]
+LOR-PROJ-CS-Word2Vec White,WC: .14 (.0) [.08, .20]
+LOR-PROJ-CS-Word2Vec White,UC: .05 (1) [-0.0, .10]
+LOR-PROJ-CS-GloVe Black,WC: .15 (.0) [.10, .19]
+LOR-PROJ-CS-GloVe Black,UC: -0.0 (1) [-0.06, .06]
+LOR-PROJ-CS-GloVe White,WC: .13 (.0) [.08, .19]
+LOR-PROJ-CS-GloVe White,UC: .02 (1) [-0.04, .07]
+LOR-PROJ-CS-fastText Black,WC: .04 (1) [-0.0, .08]
+LOR-PROJ-CS-fastText Black,UC: .11 (.0) [.07, .14]
+LOR-PROJ-CS-fastText White,WC: .06 (.03) [.02, .10]
+LOR-PROJ-CS-fastText White,UC: -0.0 (1) [-0.05, .05]
+CLASS - COMPARISON
+pfgw-WEAT-CDS-Word2Vec wc vs mc: .09 (.24) [.03, .16]
+pfgw-WEAT-CDS-Word2Vec black vs white: -0.03 (1) [-0.09, .05]
+pfgw-WEAT-CDS-GloVe wc vs mc: .12 (.0) [.05, .18]
+pfgw-WEAT-CDS-GloVe black vs white: .01 (1) [-0.06, .07]
+pfgw-WEAT-CDS-fastText wc vs mc: .1 (.48) [.04, .19]
+pfgw-WEAT-CDS-fastText black vs white: .01 (1) [-0.06, .08]
+pfgw-WEAT-CS-Word2Vec wc vs mc: .07 (.48) [.01, .13]
+pfgw-WEAT-CS-Word2Vec black vs white: -0.03 (1) [-0.08, .03]
+pfgw-WEAT-CS-GloVe wc vs mc: .12 (.0) [.07, .18]
+pfgw-WEAT-CS-GloVe black vs white: .0 (1) [-0.05, .07]
+pfgw-WEAT-CS-fastText wc vs mc: .08 (.24) [.02, .14]
+pfgw-WEAT-CS-fastText black vs white: .04 (1) [-0.02, .10]
+pfgw-PROJ-CDS-Word2Vec wc vs mc: .08 (.24) [.02, .13]
+pfgw-PROJ-CDS-Word2Vec black vs white: -0.04 (1) [-0.09, .04]
+pfgw-PROJ-CDS-GloVe wc vs mc: .1 (.0) [.04, .16]
+pfgw-PROJ-CDS-GloVe black vs white: .02 (1) [-0.03, .09]
+pfgw-PROJ-CDS-fastText wc vs mc: -0.01 (1) [-0.04, .03]
+pfgw-PROJ-CDS-fastText black vs white: .07 (.0) [.03, .10]
+pfgw-PROJ-CS-Word2Vec wc vs mc: .07 (.0) [.02, .13]
+pfgw-PROJ-CS-Word2Vec black vs white: -0.03 (1) [-0.08, .03]
+pfgw-PROJ-CS-GloVe wc vs mc: .13 (.0) [.08, .18]
+pfgw-PROJ-CS-GloVe black vs white: .02 (1) [-0.03, .08]
+pfgw-PROJ-CS-fastText wc vs mc: -0.02 (1) [-0.06, .01]
+pfgw-PROJ-CS-fastText black vs white: .06 (.0) [.02, .09]
+OR-WEAT-CDS-Word2Vec wc vs mc: .04 (1) [-0.05, .15]
+OR-WEAT-CDS-Word2Vec black vs white: -0.0 (1) [-0.09, .09]
+OR-WEAT-CDS-GloVe wc vs mc: -0.02 (1) [-0.11, .11]
+OR-WEAT-CDS-GloVe black vs white: .04 (1) [-0.09, .16]
+OR-WEAT-CDS-fastText wc vs mc: .01 (1) [-0.08, .14]
+OR-WEAT-CDS-fastText black vs white: -0.0 (1) [-0.13, .13]
+OR-WEAT-CS-Word2Vec wc vs mc: .09 (1) [-0.0, .17]
+OR-WEAT-CS-Word2Vec black vs white: -0.06 (1) [-0.13, .01]
+OR-WEAT-CS-GloVe wc vs mc: .05 (1) [-0.05, .16]
+OR-WEAT-CS-GloVe black vs white: -0.05 (1) [-0.15, .02]
+OR-WEAT-CS-fastText wc vs mc: .03 (1) [-0.07, .14]
+OR-WEAT-CS-fastText black vs white: -0.01 (1) [-0.1, .08]
+OR-PROJ-CDS-Word2Vec wc vs mc: .04 (1) [-0.06, .16]
+OR-PROJ-CDS-Word2Vec black vs white: .03 (1) [-0.08, .14]
+OR-PROJ-CDS-GloVe wc vs mc: .01 (1) [-0.08, .13]
+OR-PROJ-CDS-GloVe black vs white: .04 (1) [-0.08, .15]
+OR-PROJ-CDS-fastText wc vs mc: .02 (1) [-0.02, .06]
+OR-PROJ-CDS-fastText black vs white: .01 (1) [-0.03, .06]
+OR-PROJ-CS-Word2Vec wc vs mc: .08 (.96) [-0.0, .16]
+OR-PROJ-CS-Word2Vec black vs white: -0.06 (1) [-0.13, .03]
+OR-PROJ-CS-GloVe wc vs mc: .06 (1) [-0.01, .15]
+OR-PROJ-CS-GloVe black vs white: -0.04 (1) [-0.11, .01]
+OR-PROJ-CS-fastText wc vs mc: .03 (1) [-0.06, .12]
+OR-PROJ-CS-fastText black vs white: .02 (1) [-0.06, .10]
+LOR-WEAT-CDS-Word2Vec wc vs mc: .09 (.48) [.02, .17]
+LOR-WEAT-CDS-Word2Vec black vs white: -0.01 (1) [-0.09, .08]
+LOR-WEAT-CDS-GloVe wc vs mc: .09 (.72) [.01, .19]
+LOR-WEAT-CDS-GloVe black vs white: .04 (1) [-0.06, .12]
+LOR-WEAT-CDS-fastText wc vs mc: .11 (.24) [.04, .19]
+LOR-WEAT-CDS-fastText black vs white: .03 (1) [-0.07, .11]
+LOR-WEAT-CS-Word2Vec wc vs mc: .09 (.0) [.03, .16]
+LOR-WEAT-CS-Word2Vec black vs white: -0.04 (1) [-0.09, .02]
+LOR-WEAT-CS-GloVe wc vs mc: .11 (.0) [.05, .17]
+LOR-WEAT-CS-GloVe black vs white: -0.03 (1) [-0.08, .05]
+LOR-WEAT-CS-fastText wc vs mc: .08 (.48) [.01, .14]
+LOR-WEAT-CS-fastText black vs white: .02 (1) [-0.04, .08]
+LOR-PROJ-CDS-Word2Vec wc vs mc: .08 (.48) [.02, .16]
+LOR-PROJ-CDS-Word2Vec black vs white: -0.01 (1) [-0.08, .05]
+LOR-PROJ-CDS-GloVe wc vs mc: .09 (.48) [.02, .16]
+LOR-PROJ-CDS-GloVe black vs white: .05 (1) [-0.04, .12]
+LOR-PROJ-CDS-fastText wc vs mc: .01 (1) [-0.02, .05]
+LOR-PROJ-CDS-fastText black vs white: .06 (.0) [.03, .10]
+LOR-PROJ-CS-Word2Vec wc vs mc: .1 (.0) [.04, .16]
+LOR-PROJ-CS-Word2Vec black vs white: -0.03 (1) [-0.08, .02]
+LOR-PROJ-CS-GloVe wc vs mc: .13 (.0) [.08, .18]
+LOR-PROJ-CS-GloVe black vs white: -0.0 (1) [-0.04, .06]
+LOR-PROJ-CS-fastText wc vs mc: -0.0 (1) [-0.05, .04]
+LOR-PROJ-CS-fastText black vs white: .05 (.24) [.01, .08]
+
+PARENT-CHILD ANALYSIS
+
+WEAT-Word2Vec: father vs mother: -0.04 (.0) [-0.04, -0.04]
+WEAT-Word2Vec: son vs daughter: -0.02 (.0) [-0.02, -0.02]
+WEAT-GloVe: father vs mother: -0.02 (.0) [-0.02, -0.02]
+WEAT-GloVe: son vs daughter: -0.02 (.0) [-0.02, -0.02]
+WEAT-fastText: father vs mother: -0.02 (.0) [-0.02, -0.02]
+WEAT-fastText: son vs daughter: -0.02 (.0) [-0.02, -0.02]
+PROJ-Word2Vec: father vs mother: -0.01 (.0) [-0.01, -0.01]
+PROJ-Word2Vec: son vs daughter: -0.01 (.0) [-0.01, -0.01]
+PROJ-GloVe: father vs mother: -0.02 (.0) [-0.02, -0.01]
+PROJ-GloVe: son vs daughter: -0.01 (.0) [-0.01, -0.01]
+PROJ-fastText: father vs mother: -0.01 (.0) [-0.01, -0.01]
+PROJ-fastText: son vs daughter: -0.01 (.0) [-0.01, -0.01]
+
+ADULT ANALYSIS
+
+
+SANTA_BARBARA
+
+metric: pfgw, embeddings: Word2Vec
+0.029911494646560313
+(0.029911494646560313, 1, '[-0.02, .08]')
+metric: pfgw, embeddings: Word2Vec
+0.048604813911205
+(0.048604813911205, 0.6744, '[-0.0, .10]')
+metric: pfgw, embeddings: GloVe
+0.14701753634345865
+(0.14701753634345865, 0.0, '[.10, .20]')
+metric: pfgw, embeddings: GloVe
+0.11002403128098497
+(0.11002403128098497, 0.0, '[.06, .16]')
+metric: pfgw, embeddings: fastText
+0.06205213971370923
+(0.06205213971370923, 0.2124, '[.01, .11]')
+metric: pfgw, embeddings: fastText
+-0.024638116909630723
+(-0.024638116909630723, 1, '[-0.05, .01]')
+metric: OR, embeddings: Word2Vec
+0.0769615934625279
+(0.0769615934625279, 0.1428, '[.02, .14]')
+metric: OR, embeddings: Word2Vec
+0.09758384525643352
+(0.09758384525643352, 0.046799999999999994, '[.03, .17]')
+metric: OR, embeddings: GloVe
+0.10612770878429115
+(0.10612770878429115, 0.0804, '[.03, .19]')
+metric: OR, embeddings: GloVe
+0.09146838069717175
+(0.09146838069717175, 0.15000000000000002, '[.02, .16]')
+metric: OR, embeddings: fastText
+0.03170217579476167
+(0.03170217579476167, 1, '[-0.04, .11]')
+metric: OR, embeddings: fastText
+0.02673064277335531
+(0.02673064277335531, 1, '[-0.02, .07]')
+metric: LOR, embeddings: Word2Vec
+0.04746891258239525
+(0.04746891258239525, 0.732, '[-0.0, .10]')
+metric: LOR, embeddings: Word2Vec
+0.05774561443072771
+(0.05774561443072771, 0.3396, '[.01, .11]')
+metric: LOR, embeddings: GloVe
+0.13234368804902188
+(0.13234368804902188, 0.0, '[.08, .18]')
+metric: LOR, embeddings: GloVe
+0.09764601528339728
+(0.09764601528339728, 0.0, '[.05, .15]')
+metric: LOR, embeddings: fastText
+0.056638282225765786
+(0.056638282225765786, 0.3444, '[.01, .11]')
+metric: LOR, embeddings: fastText
+-0.02171821122377396
+(-0.02171821122377396, 1, '[-0.05, .01]')
+
+SWITCHBOARD
+
+metric: pfgw, embeddings: Word2Vec
+0.1397538990468808
+(0.1397538990468808, 0.0, '[.12, .16]')
+metric: pfgw, embeddings: Word2Vec
+0.1715539754275123
+(0.1715539754275123, 0.0, '[.15, .20]')
+metric: pfgw, embeddings: GloVe
+0.30953336085795174
+(0.30953336085795174, 0.0, '[.28, .33]')
+metric: pfgw, embeddings: GloVe
+0.28779398133497547
+(0.28779398133497547, 0.0, '[.26, .31]')
+metric: pfgw, embeddings: fastText
+0.24087053201106784
+(0.24087053201106784, 0.0, '[.22, .27]')
+metric: pfgw, embeddings: fastText
+0.04921943673271283
+(0.04921943673271283, 0.0, '[.03, .07]')
+metric: OR, embeddings: Word2Vec
+0.1351745725746229
+(0.1351745725746229, 0.0, '[.10, .16]')
+metric: OR, embeddings: Word2Vec
+0.17242285340027005
+(0.17242285340027005, 0.0, '[.13, .21]')
+metric: OR, embeddings: GloVe
+0.23940014230965143
+(0.23940014230965143, 0.0, '[.20, .28]')
+metric: OR, embeddings: GloVe
+0.23087364077488734
+(0.23087364077488734, 0.0, '[.19, .27]')
+metric: OR, embeddings: fastText
+0.17840575578153306
+(0.17840575578153306, 0.0, '[.14, .22]')
+metric: OR, embeddings: fastText
+0.07715368706482945
+(0.07715368706482945, 0.0, '[.05, .10]')
+metric: LOR, embeddings: Word2Vec
+0.13632205923375287
+(0.13632205923375287, 0.0, '[.11, .16]')
+metric: LOR, embeddings: Word2Vec
+0.16516048255471213
+(0.16516048255471213, 0.0, '[.14, .19]')
+metric: LOR, embeddings: GloVe
+0.29668348832894087
+(0.29668348832894087, 0.0, '[.27, .32]')
+metric: LOR, embeddings: GloVe
+0.2743892655738477
+(0.2743892655738477, 0.0, '[.25, .30]')
+metric: LOR, embeddings: fastText
+0.23095255959595293
+(0.23095255959595293, 0.0, '[.20, .26]')
+metric: LOR, embeddings: fastText
+0.045708194499276655
+(0.045708194499276655, 0.0, '[.03, .07]')
+
+DECADE ANALYSIS (non-historical embeddings)
+
+against 0
+pfgw-CDS-Word2Vec-WEAT vs. 0: .19 (.0) [.17, .22]
+pfgw-CDS-Word2Vec-WEAT vs. 0: .1 (.0) [.07, .13]
+pfgw-CDS-Word2Vec-WEAT vs. 0: -0.02 (1) [-0.05, .01]
+pfgw-CDS-Word2Vec-PROJ vs. 0: .22 (.0) [.20, .25]
+pfgw-CDS-Word2Vec-PROJ vs. 0: .11 (.0) [.08, .14]
+pfgw-CDS-Word2Vec-PROJ vs. 0: -0.01 (1) [-0.04, .02]
+pfgw-CDS-GloVe-WEAT vs. 0: .22 (.0) [.20, .25]
+pfgw-CDS-GloVe-WEAT vs. 0: .09 (.0) [.06, .12]
+pfgw-CDS-GloVe-WEAT vs. 0: .02 (1) [-0.01, .05]
+pfgw-CDS-GloVe-PROJ vs. 0: .24 (.0) [.21, .26]
+pfgw-CDS-GloVe-PROJ vs. 0: .08 (.0) [.05, .11]
+pfgw-CDS-GloVe-PROJ vs. 0: .01 (1) [-0.02, .04]
+pfgw-CDS-fastText-WEAT vs. 0: .18 (.0) [.15, .21]
+pfgw-CDS-fastText-WEAT vs. 0: .06 (.01) [.03, .09]
+pfgw-CDS-fastText-WEAT vs. 0: .08 (.0) [.05, .11]
+pfgw-CDS-fastText-PROJ vs. 0: .14 (.0) [.12, .16]
+pfgw-CDS-fastText-PROJ vs. 0: .03 (.26) [.01, .05]
+pfgw-CDS-fastText-PROJ vs. 0: .05 (.01) [.02, .07]
+pfgw-CS-Word2Vec-WEAT vs. 0: .26 (.0) [.23, .28]
+pfgw-CS-Word2Vec-WEAT vs. 0: .23 (.0) [.20, .26]
+pfgw-CS-Word2Vec-WEAT vs. 0: .06 (.03) [.02, .09]
+pfgw-CS-Word2Vec-PROJ vs. 0: .28 (.0) [.26, .31]
+pfgw-CS-Word2Vec-PROJ vs. 0: .23 (.0) [.20, .25]
+pfgw-CS-Word2Vec-PROJ vs. 0: .09 (.0) [.05, .12]
+pfgw-CS-GloVe-WEAT vs. 0: .29 (.0) [.26, .32]
+pfgw-CS-GloVe-WEAT vs. 0: .27 (.0) [.24, .29]
+pfgw-CS-GloVe-WEAT vs. 0: .12 (.0) [.09, .15]
+pfgw-CS-GloVe-PROJ vs. 0: .31 (.0) [.29, .34]
+pfgw-CS-GloVe-PROJ vs. 0: .25 (.0) [.22, .28]
+pfgw-CS-GloVe-PROJ vs. 0: .14 (.0) [.11, .17]
+pfgw-CS-fastText-WEAT vs. 0: .25 (.0) [.22, .27]
+pfgw-CS-fastText-WEAT vs. 0: .22 (.0) [.19, .25]
+pfgw-CS-fastText-WEAT vs. 0: .12 (.0) [.09, .15]
+pfgw-CS-fastText-PROJ vs. 0: .14 (.0) [.12, .15]
+pfgw-CS-fastText-PROJ vs. 0: .11 (.0) [.09, .13]
+pfgw-CS-fastText-PROJ vs. 0: .09 (.0) [.07, .11]
+OR-CDS-Word2Vec-WEAT vs. 0: .11 (.0) [.07, .15]
+OR-CDS-Word2Vec-WEAT vs. 0: .08 (.28) [.02, .15]
+OR-CDS-Word2Vec-WEAT vs. 0: .02 (1) [-0.03, .07]
+OR-CDS-Word2Vec-PROJ vs. 0: .17 (.0) [.12, .21]
+OR-CDS-Word2Vec-PROJ vs. 0: .1 (.05) [.04, .17]
+OR-CDS-Word2Vec-PROJ vs. 0: .04 (1) [-0.01, .10]
+OR-CDS-GloVe-WEAT vs. 0: .12 (.0) [.07, .16]
+OR-CDS-GloVe-WEAT vs. 0: .04 (1) [-0.01, .12]
+OR-CDS-GloVe-WEAT vs. 0: .04 (1) [-0.01, .09]
+OR-CDS-GloVe-PROJ vs. 0: .15 (.0) [.11, .20]
+OR-CDS-GloVe-PROJ vs. 0: .05 (1) [-0.0, .13]
+OR-CDS-GloVe-PROJ vs. 0: .05 (1) [.00, .09]
+OR-CDS-fastText-WEAT vs. 0: .08 (.01) [.04, .12]
+OR-CDS-fastText-WEAT vs. 0: .01 (1) [-0.02, .07]
+OR-CDS-fastText-WEAT vs. 0: .07 (.09) [.02, .11]
+OR-CDS-fastText-PROJ vs. 0: .09 (.0) [.06, .11]
+OR-CDS-fastText-PROJ vs. 0: -0.01 (1) [-0.06, .06]
+OR-CDS-fastText-PROJ vs. 0: .07 (.0) [.04, .09]
+OR-CS-Word2Vec-WEAT vs. 0: .06 (1) [.02, .16]
+OR-CS-Word2Vec-WEAT vs. 0: .14 (.0) [.09, .21]
+OR-CS-Word2Vec-WEAT vs. 0: .08 (.01) [.04, .13]
+OR-CS-Word2Vec-PROJ vs. 0: .08 (1) [.03, .19]
+OR-CS-Word2Vec-PROJ vs. 0: .16 (.0) [.10, .23]
+OR-CS-Word2Vec-PROJ vs. 0: .11 (.0) [.06, .16]
+OR-CS-GloVe-WEAT vs. 0: .08 (1) [.04, .17]
+OR-CS-GloVe-WEAT vs. 0: .1 (.46) [.04, .18]
+OR-CS-GloVe-WEAT vs. 0: .12 (.0) [.07, .17]
+OR-CS-GloVe-PROJ vs. 0: .08 (1) [.03, .20]
+OR-CS-GloVe-PROJ vs. 0: .11 (.3) [.05, .21]
+OR-CS-GloVe-PROJ vs. 0: .13 (.0) [.08, .18]
+OR-CS-fastText-WEAT vs. 0: .06 (.8) [.03, .12]
+OR-CS-fastText-WEAT vs. 0: .08 (1) [.02, .17]
+OR-CS-fastText-WEAT vs. 0: .11 (.01) [.06, .16]
+OR-CS-fastText-PROJ vs. 0: .01 (1) [-0.01, .07]
+OR-CS-fastText-PROJ vs. 0: .05 (1) [-0.0, .12]
+OR-CS-fastText-PROJ vs. 0: .09 (.0) [.07, .12]
+LOR-CDS-Word2Vec-WEAT vs. 0: .17 (.0) [.14, .20]
+LOR-CDS-Word2Vec-WEAT vs. 0: .09 (.0) [.06, .12]
+LOR-CDS-Word2Vec-WEAT vs. 0: -0.02 (1) [-0.06, .01]
+LOR-CDS-Word2Vec-PROJ vs. 0: .2 (.0) [.17, .22]
+LOR-CDS-Word2Vec-PROJ vs. 0: .11 (.0) [.08, .14]
+LOR-CDS-Word2Vec-PROJ vs. 0: -0.01 (1) [-0.04, .02]
+LOR-CDS-GloVe-WEAT vs. 0: .18 (.0) [.16, .21]
+LOR-CDS-GloVe-WEAT vs. 0: .08 (.0) [.04, .11]
+LOR-CDS-GloVe-WEAT vs. 0: .03 (1) [-0.0, .07]
+LOR-CDS-GloVe-PROJ vs. 0: .2 (.0) [.17, .23]
+LOR-CDS-GloVe-PROJ vs. 0: .07 (.0) [.04, .10]
+LOR-CDS-GloVe-PROJ vs. 0: .02 (1) [-0.02, .05]
+LOR-CDS-fastText-WEAT vs. 0: .14 (.0) [.11, .17]
+LOR-CDS-fastText-WEAT vs. 0: .05 (.05) [.02, .09]
+LOR-CDS-fastText-WEAT vs. 0: .09 (.0) [.06, .12]
+LOR-CDS-fastText-PROJ vs. 0: .13 (.0) [.11, .15]
+LOR-CDS-fastText-PROJ vs. 0: .02 (1) [-0.0, .05]
+LOR-CDS-fastText-PROJ vs. 0: .05 (.0) [.03, .08]
+LOR-CS-Word2Vec-WEAT vs. 0: .22 (.0) [.19, .25]
+LOR-CS-Word2Vec-WEAT vs. 0: .22 (.0) [.18, .25]
+LOR-CS-Word2Vec-WEAT vs. 0: .06 (.01) [.03, .09]
+LOR-CS-Word2Vec-PROJ vs. 0: .24 (.0) [.21, .27]
+LOR-CS-Word2Vec-PROJ vs. 0: .22 (.0) [.19, .25]
+LOR-CS-Word2Vec-PROJ vs. 0: .09 (.0) [.06, .12]
+LOR-CS-GloVe-WEAT vs. 0: .25 (.0) [.22, .28]
+LOR-CS-GloVe-WEAT vs. 0: .24 (.0) [.21, .28]
+LOR-CS-GloVe-WEAT vs. 0: .12 (.0) [.09, .15]
+LOR-CS-GloVe-PROJ vs. 0: .28 (.0) [.25, .30]
+LOR-CS-GloVe-PROJ vs. 0: .24 (.0) [.20, .27]
+LOR-CS-GloVe-PROJ vs. 0: .13 (.0) [.10, .16]
+LOR-CS-fastText-WEAT vs. 0: .2 (.0) [.17, .23]
+LOR-CS-fastText-WEAT vs. 0: .2 (.0) [.17, .24]
+LOR-CS-fastText-WEAT vs. 0: .11 (.0) [.08, .14]
+LOR-CS-fastText-PROJ vs. 0: .11 (.0) [.09, .14]
+LOR-CS-fastText-PROJ vs. 0: .1 (.0) [.08, .13]
+LOR-CS-fastText-PROJ vs. 0: .08 (.0) [.05, .10]
+70s-80s
+pfgw-CDS-Word2Vec-WEAT 70s vs 80s: .09 (.0) [.06, .13]
+pfgw-CDS-Word2Vec-PROJ 70s vs 80s: .11 (.0) [.08, .15]
+pfgw-CDS-GloVe-WEAT 70s vs 80s: .14 (.0) [.10, .18]
+pfgw-CDS-GloVe-PROJ 70s vs 80s: .16 (.0) [.12, .19]
+pfgw-CDS-fastText-WEAT 70s vs 80s: .12 (.0) [.08, .16]
+pfgw-CDS-fastText-PROJ 70s vs 80s: .11 (.0) [.08, .14]
+pfgw-CS-Word2Vec-WEAT 70s vs 80s: .03 (1) [-0.01, .07]
+pfgw-CS-Word2Vec-PROJ 70s vs 80s: .06 (.1368) [.02, .09]
+pfgw-CS-GloVe-WEAT 70s vs 80s: .02 (1) [-0.01, .06]
+pfgw-CS-GloVe-PROJ 70s vs 80s: .06 (.046799999999999994) [.02, .10]
+pfgw-CS-fastText-WEAT 70s vs 80s: .02 (1) [-0.02, .06]
+pfgw-CS-fastText-PROJ 70s vs 80s: .03 (1) [-0.0, .05]
+0 increased
+OR-CDS-Word2Vec-WEAT 70s vs 80s: .03 (1) [-0.05, .12]
+OR-CDS-Word2Vec-PROJ 70s vs 80s: .07 (1) [-0.02, .15]
+OR-CDS-GloVe-WEAT 70s vs 80s: .08 (1) [-0.01, .16]
+OR-CDS-GloVe-PROJ 70s vs 80s: .1 (.5688000000000001) [.01, .19]
+OR-CDS-fastText-WEAT 70s vs 80s: .07 (1) [-0.01, .13]
+OR-CDS-fastText-PROJ 70s vs 80s: .09 (.11520000000000001) [.02, .16]
+OR-CS-Word2Vec-WEAT 70s vs 80s: -0.08 (1) [-0.17, .03]
+OR-CS-Word2Vec-PROJ 70s vs 80s: -0.08 (1) [-0.18, .05]
+OR-CS-GloVe-WEAT 70s vs 80s: -0.02 (1) [-0.12, .09]
+OR-CS-GloVe-PROJ 70s vs 80s: -0.03 (1) [-0.15, .10]
+OR-CS-fastText-WEAT 70s vs 80s: -0.02 (1) [-0.12, .07]
+OR-CS-fastText-PROJ 70s vs 80s: -0.04 (1) [-0.11, .04]
+6 increased
+LOR-CDS-Word2Vec-WEAT 70s vs 80s: .08 (.007200000000000001) [.04, .12]
+LOR-CDS-Word2Vec-PROJ 70s vs 80s: .09 (.0) [.05, .13]
+LOR-CDS-GloVe-WEAT 70s vs 80s: .11 (.0) [.06, .15]
+LOR-CDS-GloVe-PROJ 70s vs 80s: .13 (.0) [.08, .17]
+LOR-CDS-fastText-WEAT 70s vs 80s: .09 (.0) [.05, .13]
+LOR-CDS-fastText-PROJ 70s vs 80s: .11 (.0) [.07, .14]
+LOR-CS-Word2Vec-WEAT 70s vs 80s: .01 (1) [-0.03, .05]
+LOR-CS-Word2Vec-PROJ 70s vs 80s: .02 (1) [-0.03, .06]
+LOR-CS-GloVe-WEAT 70s vs 80s: .0 (1) [-0.04, .05]
+LOR-CS-GloVe-PROJ 70s vs 80s: .04 (1) [-0.0, .08]
+LOR-CS-fastText-WEAT 70s vs 80s: .0 (1) [-0.04, .05]
+LOR-CS-fastText-PROJ 70s vs 80s: .01 (1) [-0.02, .04]
+0 increased
+80s-90s
+pfgw-CDS-Word2Vec-WEAT 80s vs 90s: .12 (.0) [.08, .16]
+pfgw-CDS-Word2Vec-PROJ 80s vs 90s: .12 (.0) [.08, .16]
+pfgw-CDS-GloVe-WEAT 80s vs 90s: .06 (.1836) [.02, .11]
+pfgw-CDS-GloVe-PROJ 80s vs 90s: .07 (.036000000000000004) [.03, .11]
+pfgw-CDS-fastText-WEAT 80s vs 90s: -0.02 (1) [-0.06, .03]
+pfgw-CDS-fastText-PROJ 80s vs 90s: -0.02 (1) [-0.05, .01]
+pfgw-CS-Word2Vec-WEAT 80s vs 90s: .18 (.0) [.13, .22]
+pfgw-CS-Word2Vec-PROJ 80s vs 90s: .14 (.0) [.10, .18]
+pfgw-CS-GloVe-WEAT 80s vs 90s: .14 (.0) [.10, .18]
+pfgw-CS-GloVe-PROJ 80s vs 90s: .11 (.0) [.07, .15]
+pfgw-CS-fastText-WEAT 80s vs 90s: .1 (.0) [.06, .14]
+pfgw-CS-fastText-PROJ 80s vs 90s: .02 (1) [-0.01, .05]
+2 increased
+OR-CDS-Word2Vec-WEAT 80s vs 90s: .07 (1) [-0.03, .16]
+OR-CDS-Word2Vec-PROJ 80s vs 90s: .06 (1) [-0.04, .15]
+OR-CDS-GloVe-WEAT 80s vs 90s: .0 (1) [-0.08, .10]
+OR-CDS-GloVe-PROJ 80s vs 90s: .0 (1) [-0.08, .09]
+OR-CDS-fastText-WEAT 80s vs 90s: -0.06 (1) [-0.12, .02]
+OR-CDS-fastText-PROJ 80s vs 90s: -0.07 (1) [-0.14, -0.0]
+OR-CS-Word2Vec-WEAT 80s vs 90s: .06 (1) [-0.02, .14]
+OR-CS-Word2Vec-PROJ 80s vs 90s: .05 (1) [-0.03, .14]
+OR-CS-GloVe-WEAT 80s vs 90s: -0.02 (1) [-0.1, .08]
+OR-CS-GloVe-PROJ 80s vs 90s: -0.02 (1) [-0.11, .09]
+OR-CS-fastText-WEAT 80s vs 90s: -0.03 (1) [-0.11, .08]
+OR-CS-fastText-PROJ 80s vs 90s: -0.04 (1) [-0.11, .03]
+6 increased
+LOR-CDS-Word2Vec-WEAT 80s vs 90s: .12 (.0) [.07, .16]
+LOR-CDS-Word2Vec-PROJ 80s vs 90s: .12 (.0) [.07, .16]
+LOR-CDS-GloVe-WEAT 80s vs 90s: .04 (1) [-0.0, .09]
+LOR-CDS-GloVe-PROJ 80s vs 90s: .05 (.7272) [.01, .10]
+LOR-CDS-fastText-WEAT 80s vs 90s: -0.04 (1) [-0.08, .01]
+LOR-CDS-fastText-PROJ 80s vs 90s: -0.03 (1) [-0.06, .01]
+LOR-CS-Word2Vec-WEAT 80s vs 90s: .16 (.0) [.11, .20]
+LOR-CS-Word2Vec-PROJ 80s vs 90s: .13 (.0) [.09, .18]
+LOR-CS-GloVe-WEAT 80s vs 90s: .13 (.0) [.08, .17]
+LOR-CS-GloVe-PROJ 80s vs 90s: .11 (.0) [.06, .15]
+LOR-CS-fastText-WEAT 80s vs 90s: .09 (.007200000000000001) [.04, .13]
+LOR-CS-fastText-PROJ 80s vs 90s: .03 (1) [-0.01, .06]
+2 increased
+70s-90s
+pfgw-CDS-Word2Vec-WEAT 70s vs 90s: .21 (.0) [.17, .25]
+pfgw-CDS-Word2Vec-PROJ 70s vs 90s: .23 (.0) [.19, .27]
+pfgw-CDS-GloVe-WEAT 70s vs 90s: .2 (.0) [.16, .24]
+pfgw-CDS-GloVe-PROJ 70s vs 90s: .23 (.0) [.19, .26]
+pfgw-CDS-fastText-WEAT 70s vs 90s: .1 (.0) [.06, .14]
+pfgw-CDS-fastText-PROJ 70s vs 90s: .09 (.0) [.06, .12]
+pfgw-CS-Word2Vec-WEAT 70s vs 90s: .2 (.0) [.17, .24]
+pfgw-CS-Word2Vec-PROJ 70s vs 90s: .2 (.0) [.16, .24]
+pfgw-CS-GloVe-WEAT 70s vs 90s: .17 (.0) [.13, .21]
+pfgw-CS-GloVe-PROJ 70s vs 90s: .17 (.0) [.13, .21]
+pfgw-CS-fastText-WEAT 70s vs 90s: .12 (.0) [.08, .16]
+pfgw-CS-fastText-PROJ 70s vs 90s: .05 (.0504) [.02, .08]
+0 increased
+OR-CDS-Word2Vec-WEAT 70s vs 90s: .1 (.0504) [.03, .16]
+OR-CDS-Word2Vec-PROJ 70s vs 90s: .12 (.028800000000000003) [.04, .19]
+OR-CDS-GloVe-WEAT 70s vs 90s: .08 (.5724) [.01, .14]
+OR-CDS-GloVe-PROJ 70s vs 90s: .11 (.046799999999999994) [.04, .17]
+OR-CDS-fastText-WEAT 70s vs 90s: .01 (1) [-0.05, .07]
+OR-CDS-fastText-PROJ 70s vs 90s: .02 (1) [-0.02, .05]
+OR-CS-Word2Vec-WEAT 70s vs 90s: -0.02 (1) [-0.09, .08]
+OR-CS-Word2Vec-PROJ 70s vs 90s: -0.03 (1) [-0.11, .09]
+OR-CS-GloVe-WEAT 70s vs 90s: -0.04 (1) [-0.11, .06]
+OR-CS-GloVe-PROJ 70s vs 90s: -0.05 (1) [-0.13, .07]
+OR-CS-fastText-WEAT 70s vs 90s: -0.05 (1) [-0.11, .03]
+OR-CS-fastText-PROJ 70s vs 90s: -0.08 (.18719999999999998) [-0.11, -0.03]
+6 increased
+LOR-CDS-Word2Vec-WEAT 70s vs 90s: .19 (.0) [.15, .23]
+LOR-CDS-Word2Vec-PROJ 70s vs 90s: .21 (.0) [.16, .25]
+LOR-CDS-GloVe-WEAT 70s vs 90s: .15 (.0) [.11, .20]
+LOR-CDS-GloVe-PROJ 70s vs 90s: .18 (.0) [.14, .22]
+LOR-CDS-fastText-WEAT 70s vs 90s: .05 (.6911999999999999) [.01, .10]
+LOR-CDS-fastText-PROJ 70s vs 90s: .08 (.0) [.04, .11]
+LOR-CS-Word2Vec-WEAT 70s vs 90s: .16 (.0) [.12, .21]
+LOR-CS-Word2Vec-PROJ 70s vs 90s: .15 (.0) [.10, .19]
+LOR-CS-GloVe-WEAT 70s vs 90s: .13 (.0) [.09, .17]
+LOR-CS-GloVe-PROJ 70s vs 90s: .15 (.0) [.11, .19]
+LOR-CS-fastText-WEAT 70s vs 90s: .09 (.0) [.05, .13]
+LOR-CS-fastText-PROJ 70s vs 90s: .04 (.6588) [.01, .07]
+0 increased
+
+DECADE ANALYSIS (historical embeddings)
+
+against 0
+pfgw-CDS-Hist-WEAT vs. 0: .15 (.0) [.13, .18]
+pfgw-CDS-Hist-WEAT vs. 0: .06 (.0) [.04, .10]
+pfgw-CDS-Hist-WEAT vs. 0: -0.01 (1) [-0.05, .03]
+pfgw-CDS-Hist-PROJ vs. 0: .18 (.0) [.16, .20]
+pfgw-CDS-Hist-PROJ vs. 0: .07 (.0) [.04, .11]
+pfgw-CDS-Hist-PROJ vs. 0: -0.03 (1) [-0.07, .02]
+pfgw-CS-Hist-WEAT vs. 0: .2 (.0) [.18, .23]
+pfgw-CS-Hist-WEAT vs. 0: .18 (.0) [.15, .20]
+pfgw-CS-Hist-WEAT vs. 0: .05 (.0) [.02, .08]
+pfgw-CS-Hist-PROJ vs. 0: .23 (.0) [.21, .25]
+pfgw-CS-Hist-PROJ vs. 0: .19 (.0) [.17, .22]
+pfgw-CS-Hist-PROJ vs. 0: .03 (1) [.01, .06]
+OR-CDS-Hist-WEAT vs. 0: .12 (.0) [.08, .17]
+OR-CDS-Hist-WEAT vs. 0: .03 (1) [-0.02, .09]
+OR-CDS-Hist-WEAT vs. 0: .0 (1) [-0.04, .06]
+OR-CDS-Hist-PROJ vs. 0: .11 (.0) [.08, .14]
+OR-CDS-Hist-PROJ vs. 0: .07 (.0) [.03, .12]
+OR-CDS-Hist-PROJ vs. 0: .04 (1) [.01, .09]
+OR-CS-Hist-WEAT vs. 0: .15 (.0) [.10, .18]
+OR-CS-Hist-WEAT vs. 0: .06 (1) [.01, .15]
+OR-CS-Hist-WEAT vs. 0: .04 (1) [-0.0, .08]
+OR-CS-Hist-PROJ vs. 0: .14 (.0) [.10, .18]
+OR-CS-Hist-PROJ vs. 0: .11 (.0) [.06, .18]
+OR-CS-Hist-PROJ vs. 0: .04 (1) [.01, .07]
+LOR-CDS-Hist-WEAT vs. 0: .15 (.0) [.12, .18]
+LOR-CDS-Hist-WEAT vs. 0: .05 (.0) [.02, .09]
+LOR-CDS-Hist-WEAT vs. 0: -0.02 (1) [-0.05, .02]
+LOR-CDS-Hist-PROJ vs. 0: .17 (.0) [.14, .19]
+LOR-CDS-Hist-PROJ vs. 0: .06 (.0) [.03, .09]
+LOR-CDS-Hist-PROJ vs. 0: -0.03 (1) [-0.06, .02]
+LOR-CS-Hist-WEAT vs. 0: .19 (.0) [.16, .22]
+LOR-CS-Hist-WEAT vs. 0: .16 (.0) [.13, .19]
+LOR-CS-Hist-WEAT vs. 0: .03 (.72) [.01, .06]
+LOR-CS-Hist-PROJ vs. 0: .21 (.0) [.18, .23]
+LOR-CS-Hist-PROJ vs. 0: .18 (.0) [.16, .21]
+LOR-CS-Hist-PROJ vs. 0: .02 (1) [-0.0, .05]
+70s-80s
+pfgw-CDS-Hist-WEAT 70s vs 80s: .09 (.0) [.05, .12]
+pfgw-CDS-Hist-PROJ 70s vs 80s: .11 (.0) [.06, .14]
+pfgw-CS-Hist-WEAT 70s vs 80s: .03 (1) [-0.01, .06]
+pfgw-CS-Hist-PROJ 70s vs 80s: .03 (1) [.00, .06]
+0 increased
+OR-CDS-Hist-WEAT 70s vs 80s: .08 (.72) [.01, .16]
+OR-CDS-Hist-PROJ 70s vs 80s: .04 (1) [-0.03, .10]
+OR-CS-Hist-WEAT 70s vs 80s: .09 (1) [-0.0, .16]
+OR-CS-Hist-PROJ 70s vs 80s: .03 (1) [-0.04, .10]
+0 increased
+LOR-CDS-Hist-WEAT 70s vs 80s: .1 (.0) [.05, .14]
+LOR-CDS-Hist-PROJ 70s vs 80s: .11 (.0) [.07, .15]
+LOR-CS-Hist-WEAT 70s vs 80s: .03 (1) [-0.01, .06]
+LOR-CS-Hist-PROJ 70s vs 80s: .02 (1) [-0.01, .06]
+0 increased
+80s-90s
+pfgw-CDS-Hist-WEAT 80s vs 90s: .08 (.0) [.03, .12]
+pfgw-CDS-Hist-PROJ 80s vs 90s: .11 (.0) [.05, .16]
+pfgw-CS-Hist-WEAT 80s vs 90s: .13 (.0) [.09, .16]
+pfgw-CS-Hist-PROJ 80s vs 90s: .16 (.0) [.12, .20]
+0 increased
+OR-CDS-Hist-WEAT 80s vs 90s: .03 (1) [-0.06, .11]
+OR-CDS-Hist-PROJ 80s vs 90s: .02 (1) [-0.05, .09]
+OR-CS-Hist-WEAT 80s vs 90s: .02 (1) [-0.05, .11]
+OR-CS-Hist-PROJ 80s vs 90s: .07 (1) [.00, .15]
+0 increased
+LOR-CDS-Hist-WEAT 80s vs 90s: .07 (.36) [.03, .12]
+LOR-CDS-Hist-PROJ 80s vs 90s: .09 (.0) [.03, .13]
+LOR-CS-Hist-WEAT 80s vs 90s: .13 (.0) [.08, .17]
+LOR-CS-Hist-PROJ 80s vs 90s: .16 (.0) [.12, .19]
+0 increased
+70s-90s
+pfgw-CDS-Hist-WEAT 70s vs 90s: .17 (.0) [.12, .21]
+pfgw-CDS-Hist-PROJ 70s vs 90s: .21 (.0) [.16, .26]
+pfgw-CS-Hist-WEAT 70s vs 90s: .16 (.0) [.12, .20]
+pfgw-CS-Hist-PROJ 70s vs 90s: .19 (.0) [.16, .23]
+0 increased
+OR-CDS-Hist-WEAT 70s vs 90s: .11 (.0) [.06, .19]
+OR-CDS-Hist-PROJ 70s vs 90s: .06 (.36) [.01, .11]
+OR-CS-Hist-WEAT 70s vs 90s: .11 (.0) [.04, .16]
+OR-CS-Hist-PROJ 70s vs 90s: .11 (.0) [.05, .16]
+0 increased
+LOR-CDS-Hist-WEAT 70s vs 90s: .17 (.0) [.12, .21]
+LOR-CDS-Hist-PROJ 70s vs 90s: .2 (.0) [.15, .24]
+LOR-CS-Hist-WEAT 70s vs 90s: .15 (.0) [.11, .20]
+LOR-CS-Hist-PROJ 70s vs 90s: .18 (.0) [.14, .22]
+0 increased

@@ -1,0 +1,1 @@
+python hypothesis_tests.py > ../../data/results/hypothesis_test_results.txt

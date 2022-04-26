@@ -1,0 +1,59 @@
+=======
+CDS
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:                   pfgw   R-squared (uncentered):                   0.630
+Model:                            OLS   Adj. R-squared (uncentered):              0.630
+Method:                 Least Squares   F-statistic:                              2662.
+Date:                Mon, 13 Dec 2021   Prob (F-statistic):                        0.00
+Time:                        10:49:09   Log-Likelihood:                         -2135.3
+No. Observations:                6264   AIC:                                      4279.
+Df Residuals:                    6260   BIC:                                      4306.
+Df Model:                           4                                                  
+Covariance Type:            nonrobust                                                  
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+length         0.0168      0.002      9.448      0.000       0.013       0.020
+log_freq       0.0161      0.002      6.913      0.000       0.012       0.021
+conc           0.0311      0.004      8.844      0.000       0.024       0.038
+val            0.0337      0.003     11.447      0.000       0.028       0.040
+==============================================================================
+Omnibus:                      661.124   Durbin-Watson:                   1.972
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              324.708
+Skew:                           0.392   Prob(JB):                     3.09e-71
+Kurtosis:                       2.207   Cond. No.                         8.92
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.
+CS
+                                 OLS Regression Results                                
+=======================================================================================
+Dep. Variable:                   pfgw   R-squared (uncentered):                   0.582
+Model:                            OLS   Adj. R-squared (uncentered):              0.581
+Method:                 Least Squares   F-statistic:                              1338.
+Date:                Mon, 13 Dec 2021   Prob (F-statistic):                        0.00
+Time:                        10:49:09   Log-Likelihood:                         -1361.5
+No. Observations:                3850   AIC:                                      2731.
+Df Residuals:                    3846   BIC:                                      2756.
+Df Model:                           4                                                  
+Covariance Type:            nonrobust                                                  
+==============================================================================
+                 coef    std err          t      P>|t|      [0.025      0.975]
+------------------------------------------------------------------------------
+length        -0.0007      0.003     -0.255      0.799      -0.006       0.005
+log_freq       0.0172      0.003      5.666      0.000       0.011       0.023
+conc           0.0488      0.005     10.147      0.000       0.039       0.058
+val            0.0315      0.004      8.171      0.000       0.024       0.039
+==============================================================================
+Omnibus:                      425.262   Durbin-Watson:                   2.015
+Prob(Omnibus):                  0.000   Jarque-Bera (JB):              300.001
+Skew:                           0.576   Prob(JB):                     7.17e-66
+Kurtosis:                       2.263   Cond. No.                         9.12
+==============================================================================
+
+Notes:
+[1] R² is computed without centering (uncentered) since the model does not contain a constant.
+[2] Standard Errors assume that the covariance matrix of the errors is correctly specified.

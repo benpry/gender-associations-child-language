@@ -1,0 +1,26 @@
+      Unnamed: 0  bootstrap_num      Speech Type Embeddings  Test  Association
+0              0              0       father_son   Word2Vec  WEAT    -0.229712
+1              1              0  father_daughter   Word2Vec  WEAT    -0.195474
+2              2              0       mother_son   Word2Vec  WEAT    -0.177995
+3              3              0  mother_daughter   Word2Vec  WEAT    -0.170015
+4              4              0       father_son   Word2Vec  PROJ    -0.054653
+...          ...            ...              ...        ...   ...          ...
+2395        2395             99  mother_daughter   fastText  WEAT    -0.058494
+2396        2396             99       father_son   fastText  PROJ    -0.275039
+2397        2397             99  father_daughter   fastText  PROJ    -0.263318
+2398        2398             99       mother_son   fastText  PROJ    -0.261304
+2399        2399             99  mother_daughter   fastText  PROJ    -0.260711
+
+[2400 rows x 6 columns]
+WEAT-Word2Vec: father vs mother: (-0.03916255899010823, 0.0)
+WEAT-Word2Vec: son vs daughter: (-0.019867592583751148, 0.0)
+WEAT-GloVe: father vs mother: (-0.02253911730183189, 0.0)
+WEAT-GloVe: son vs daughter: (-0.017432571570905164, 0.0)
+WEAT-fastText: father vs mother: (-0.01779725408697312, 0.0)
+WEAT-fastText: son vs daughter: (-0.02006923851473074, 0.0)
+PROJ-Word2Vec: father vs mother: (-0.00896095822274924, 0.0)
+PROJ-Word2Vec: son vs daughter: (-0.006753246230085219, 0.0)
+PROJ-GloVe: father vs mother: (-0.01620472093382122, 0.0)
+PROJ-GloVe: son vs daughter: (-0.013483837235069851, 0.0)
+PROJ-fastText: father vs mother: (-0.008519836070567388, 0.0)
+PROJ-fastText: son vs daughter: (-0.006031939215469129, 0.0)

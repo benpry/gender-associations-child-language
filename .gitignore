@@ -1,0 +1,4 @@
+# results with files that are too big for git
+yearly/
+class/
+__pycache__/

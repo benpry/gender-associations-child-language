@@ -1,0 +1,14 @@
+total tokens: 1275572
+total boys: 26
+total girls: 12
+total children: 38
+boys by age
+defaultdict(<class 'int'>, {'4': 890782})
+girls by age
+defaultdict(<class 'int'>, {'4': 384789})
+percentage girls tokens by age
+{'4': 0.30166019766833835}
+total tokens by age
+{'4': 1275571}
+all ages
+['', '4']

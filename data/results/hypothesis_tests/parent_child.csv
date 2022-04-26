@@ -1,0 +1,13 @@
+,metric,embeddings,comparison,mean_stat,p,ci
+0,WEAT,Word2Vec,father-mother,-0.040927003410806795,0.0,"[-0.04, -0.04]"
+1,WEAT,Word2Vec,son-daughter,-0.02239532461926802,0.0,"[-0.02, -0.02]"
+2,WEAT,GloVe,father-mother,-0.022725849886594665,0.0,"[-0.02, -0.02]"
+3,WEAT,GloVe,son-daughter,-0.01845037073296661,0.0,"[-0.02, -0.02]"
+4,WEAT,fastText,father-mother,-0.01812602815659803,0.0,"[-0.02, -0.02]"
+5,WEAT,fastText,son-daughter,-0.021127670682295832,0.0,"[-0.02, -0.02]"
+6,PROJ,Word2Vec,father-mother,-0.009365851852638336,0.0,"[-0.01, -0.01]"
+7,PROJ,Word2Vec,son-daughter,-0.007453816669750188,0.0,"[-0.01, -0.01]"
+8,PROJ,GloVe,father-mother,-0.016481730946389994,0.0,"[-0.02, -0.02]"
+9,PROJ,GloVe,son-daughter,-0.01466395287189956,0.0,"[-0.02, -0.01]"
+10,PROJ,fastText,father-mother,-0.008877807230791679,0.0,"[-0.01, -0.01]"
+11,PROJ,fastText,son-daughter,-0.007466080824736765,0.0,"[-0.01, -0.01]"
