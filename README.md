@@ -2,7 +2,7 @@
 
 This repository provides the code for the following publication:
 
-Prystawski, B., Grant, E., Nematzadeh, A., Lee, S.W.S., Stevenson, S., and Xu, Y. (to appear) The emergence of gender associations in child language development. Cognitive Science.
+Prystawski, B., Grant, E., Nematzadeh, A., Lee, S.W.S., Stevenson, S., and Xu, Y. (2022) The emergence of gender associations in child language development. Cognitive Science.
 
 ## Code
 
